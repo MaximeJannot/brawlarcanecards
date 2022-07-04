@@ -1,0 +1,68 @@
+<div class="js-tabs">
+			<ul class="js-tablist" data-existing-hx="h3">
+				<li class="js-tablist__item">
+					<a href="#id_first_{{ include.player }}" class="js-tablist__link">Blood mage</a>
+				</li>
+				<li class="js-tablist__item">
+					<a href="#id_second_{{ include.player }}" class="js-tablist__link">Green witch</a>
+				</li>
+				<li class="js-tablist__item">
+					<a href="#id_third_{{ include.player }}" class="js-tablist__link">Luminous Sorcerer</a>
+				</li>
+				<li class="js-tablist__item">
+					<a href="#id_fourth_{{ include.player }}" class="js-tablist__link">Necromancer</a>
+				</li>
+				<li class="js-tablist__item">
+					<a href="#id_fifth_{{ include.player }}" class="js-tablist__link">Noble Scholar</a>
+				</li>
+				<li class="js-tablist__item">
+					<a href="#id_sixth_{{ include.player }}" class="js-tablist__link">Metallurgist</a>
+				</li>
+				<li class="js-tablist__item">
+					<a href="#id_seventh_{{ include.player }}" class="js-tablist__link">Mermance</a>
+				</li>
+			</ul>
+			<div id="id_first_{{ include.player }}" class="js-tabcontent">
+				{% include fiche-mage.html
+					mage_name="Blood mage"
+					mage_description="The grisly rituals of Blood Mages are seen as disturbing by most people outside of The Pale Mountains. They have accepted their outsider status, and tend to care little for the opinions and laws of the rest of the land."
+
+					ability_name="Sanguine Rite"
+					ability_description="The Wizard can take D6 damage in the start phase in order to roll an additional D6 during Spell Selection."
+
+					spell_name="Boiling Blood"
+					spell_range="3"
+					spell_damage="2D6"
+					spell_special="-"
+				%}
+			</div>
+			<div id="id_second_{{ include.player }}" class="js-tabcontent">
+				{% include fiche-mage.html
+					mage_name="Green Witch"
+					mage_description="Generally found deep in the forests and swamps across the land. They have a strong connection with nature and will violently protect it from others."
+
+					ability_name="Fleet of Foot"
+					ability_description="The Wizard can move 2 spaces during the Start Phase, this ignores the 2 damage if an enemy model is within 1 space and doesn't affect their Move later in the action phase ."
+
+					spell_name="Grasping Vines"
+					spell_range="8"
+					spell_damage="-"
+					spell_special="Target cannot Move or take an Action on their next turn."
+				%}
+			</div>
+			<div id="id_third_{{ include.player }}" class="js-tabcontent">
+				Ici le contenu du troisième onglet
+			</div>
+			<div id="id_fourth_{{ include.player }}" class="js-tabcontent">
+				Ici le contenu du quatrième onglet
+			</div>
+			<div id="id_fifth_{{ include.player }}" class="js-tabcontent">
+				Ici le contenu du cinquième onglet
+			</div>
+			<div id="id_sixth_{{ include.player }}" class="js-tabcontent">
+				Ici le contenu du sixième onglet
+			</div>
+			<div id="id_seventh_{{ include.player }}" class="js-tabcontent">
+				Ici le contenu du septième onglet
+			</div>
+		</div>

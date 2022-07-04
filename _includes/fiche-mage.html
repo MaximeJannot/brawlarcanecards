@@ -1,0 +1,54 @@
+<div class="tabcontent__element tabcontent__element-character">
+	<h3>{{ include.mage_name }}</h3>
+	<p class="description">
+		{{ include.mage_description }}
+	</p>
+</div>
+<div class="tabcontent__element tabcontent__element-stat">
+	<h4>Stat</h4>
+	<div class="row_table">
+		<div class="column_table">
+			<h5>Move</h5>
+			<p>4</p>
+		</div>
+		<div class="column_table">
+			<h5>Skill</h5>
+			<p>4</p>
+		</div>
+		<div class="column_table">
+			<h5>Defence</h5>
+			<p>4</p>
+		</div>
+		<div class="column_table">
+			<h5>health</h5>
+			<div class="row_health">
+        		<button id="loose_health_mage">-</button>
+        		<input id="total_health_mage" type="number" value="15" min="0" max="15"/>
+        		<button id="gain_health_mage" class="inactive">+</button>				            
+        	</div>
+		</div>
+	</div>
+</div>
+<div class="tabcontent__element tabcontent__element-ability">
+	<h4>Ability : {{ include.ability_name }}</h4>
+	<p>
+		{{ include.ability_description }}
+	</p>
+</div>
+<div class="tabcontent__element tabcontent__element-spell">
+	<h4>Spell : {{ include.spell_name }}</h4>
+	<div class="row_table">
+		<div class="column_table">
+			<h5>Range</h5>
+			<p>{{ include.spell_range }}</p>
+		</div>
+		<div class="column_table">
+			<h5>Damage</h5>
+			<p>{{ include.spell_damage }}</p>
+		</div>
+		<div class="column_table">
+			<h5>Special</h5>
+			<p>{{ include.spell_special }}</p>
+		</div>
+	</div>
+</div>
