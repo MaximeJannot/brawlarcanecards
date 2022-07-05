@@ -37,6 +37,7 @@
 			<div id="id_first_{{ include.player }}" class="js-tabcontent">
 				{% include fiche-mage.html
 					mage_name="Artful Trickster"
+					mage_name-for-script="artful"
 					mage_description="These performers travel the land entertaining and astounding the masses. Specialising in hypnosis and illusions, some question whether their magic is actually real, or just smoke and mirrors"
 
 					ability_name="Adoring Fans"
@@ -46,11 +47,23 @@
 					spell_range="8"
 					spell_damage="-"
 					spell_special="Can only target friendly Minions. The Wizard and Target swap spaces"
+
+					name_minion="Phantasm"
+					name_minion-for-script="phantasm"
+					move_minion="3"
+					skill_minion="2"
+					defence_minion="4"
+					health_minion="4"
+					action_minion="Hypnotic Dancing"
+					range_minion="1"
+					damage_minion="2"
+					special_minion="If successful, the Target can only target this model on its next turn, unless it is already under this effect from another model."
 				%}
 			</div>
 			<div id="id_second_{{ include.player }}" class="js-tabcontent">
 				{% include fiche-mage.html
 					mage_name="Astral Warlock"
+					mage_name-for-script="astral"
 					mage_description="Astral Warlocks reach out to ancient beings from beyond the stars. Many of them draw power into this world, not knowing the full malevolence of what lies behind it"
 
 					ability_name="Eyes from Beyond"
@@ -60,11 +73,23 @@
 					spell_range="6"
 					spell_damage="D6"
 					spell_special="Target has -2 Skill on their next turn."
+
+					name_minion="Void Born"
+					name_minion-for-script="void"
+					move_minion="2"
+					skill_minion="4"
+					defence_minion="3"
+					health_minion="4"
+					action_minion="Cosmic Volley"
+					range_minion="6"
+					damage_minion="2"
+					special_minion="-"
 				%}
 			</div>
 			<div id="id_third_{{ include.player }}" class="js-tabcontent">
 				{% include fiche-mage.html
 					mage_name="Blood mage"
+					mage_name-for-script="blood"
 					mage_description="The grisly rituals of Blood Mages are seen as disturbing by most people outside of The Pale Mountains. They have accepted their outsider status, and tend to care little for the opinions and laws of the rest of the land."
 
 					ability_name="Sanguine Rite"
@@ -74,11 +99,23 @@
 					spell_range="3"
 					spell_damage="2D6"
 					spell_special="-"
+
+					name_minion="Blood Imp"
+					name_minion-for-script="bloodimp"
+					move_minion="4"
+					skill_minion="3"
+					defence_minion="2"
+					health_minion="4"
+					action_minion="Leech"
+					range_minion="1"
+					damage_minion="3"
+					special_minion="If this action deals damage to a Blood Mage’s enemy, the Blood Mage regains 1 Health."
 				%}
 			</div>
 			<div id="id_fourth_{{ include.player }}" class="js-tabcontent">
 				{% include fiche-mage.html
 					mage_name="Draconic Magus"
+					mage_name-for-script="draconic"
 					mage_description="Heretical monks who worship the Slumbering Dragons. Their closeness to these powerful creatures allows them to harness the power of fire"
 
 					ability_name="Soul of the Dragon"
@@ -88,11 +125,23 @@
 					spell_range="6"
 					spell_damage="2D6"
 					spell_special="Flame"
+
+					name_minion="Drake Spirit"
+					name_minion-for-script="drake"
+					move_minion="3"
+					skill_minion="4"
+					defence_minion="2"
+					health_minion="4"
+					action_minion="Ignite"
+					range_minion="1"
+					damage_minion="2"
+					special_minion="Flame"
 				%}
 			</div>
 			<div id="id_fifth_{{ include.player }}" class="js-tabcontent">
 				{% include fiche-mage.html
 					mage_name="Flesh Transmuteur"
+					mage_name-for-script="flesh"
 					mage_description="These Wizards operate on the fringes of modern magic. They have the power to shape organic matter, an ability that drives many mad with power."
 
 					ability_name="Biomancy"
@@ -105,11 +154,23 @@
 					spell_range="6"
 					spell_damage="-"
 					spell_special="Can only target friendly Minions. The Minion gains +2 to Move, Skill and Damage then dies at the end of its turn."
+
+					name_minion="Mutant"
+					name_minion-for-script="mutant"
+					move_minion="3"
+					skill_minion="3"
+					defence_minion="3"
+					health_minion="4"
+					action_minion="Mindless Assault"
+					range_minion="1"
+					damage_minion="D6"
+					special_minion="-"
 				%}
 			</div>
 			<div id="id_sixth_{{ include.player }}" class="js-tabcontent">
 				{% include fiche-mage.html
 					mage_name="Green Witch"
+					mage_name-for-script="green"
 					mage_description="Generally found deep in the forests and swamps across the land. They have a strong connection with nature and will violently protect it from others."
 
 					ability_name="Fleet of Foot"
@@ -119,11 +180,23 @@
 					spell_range="8"
 					spell_damage="-"
 					spell_special="Target cannot Move or take an Action on their next turn."
+
+					name_minion="Forest Dweller"
+					name_minion-for-script="forest"
+					move_minion="5"
+					skill_minion="2"
+					defence_minion="2"
+					health_minion="4"
+					action_minion="Lunge"
+					range_minion="1"
+					damage_minion="D6"
+					special_minion="Roll Skill twice and use the highest result against Targets affected by Grasping Vines"
 				%}
 			</div>
 			<div id="id_seventh_{{ include.player }}" class="js-tabcontent">
 				{% include fiche-mage.html
 					mage_name="Luminous Sorcerer"
+					mage_name-for-script="luminous"
 					mage_description="Devout followers of The Path of Light. They can be found throughout the land as priests of The Great Orb."
 
 					ability_name="Blinding Radiance"
@@ -133,11 +206,23 @@
 					spell_range="6"
 					spell_damage="-"
 					spell_special="Target regains D6 Health."
+
+					name_minion="Brightling"
+					name_minion-for-script="brightling"
+					move_minion="4"
+					skill_minion="3"
+					defence_minion="2"
+					health_minion="4"
+					action_minion="Sunbeam"
+					range_minion="4"
+					damage_minion="3"
+					special_minion="-"
 				%}
 			</div>
 			<div id="id_eighth_{{ include.player }}" class="js-tabcontent">
 				{% include fiche-mage.html
 					mage_name="Metallurgist"
+					mage_name-for-script="metallurgist"
 					mage_description="Found in most cities as Alchemical Tinkerers and Arcane Blacksmiths. They make a living by forging raw magical energy into mundane objects and are highly sought after."
 
 					ability_name=": Tough as Nails"
@@ -147,11 +232,23 @@
 					spell_range="4"
 					spell_damage="2D3"
 					spell_special="If successful, all enemy models within 2 spaces of the Target take 2 Damage."
+
+					name_minion="Automaton"
+					name_minion-for-script="automaton"
+					move_minion="3"
+					skill_minion="3"
+					defence_minion="3"
+					health_minion="4"
+					action_minion="Crippling Bash"
+					range_minion="1"
+					damage_minion="3"
+					special_minion="Target has -1 Move on its next turn."
 				%}
 			</div>
 			<div id="id_ninth_{{ include.player }}" class="js-tabcontent">
 				{% include fiche-mage.html
 					mage_name="Mermancer"
+					mage_name-for-script="mermancer"
 					mage_description="Whether sailors, pirates or sea-folk, these Wizards draw their power from the Blue Deep. Their talents are invaluable to any who travel the seas."
 
 					ability_name="Oceanic Fog"
@@ -161,11 +258,23 @@
 					spell_range="-"
 					spell_damage="-"
 					spell_special="Cannot target Minions. Move all enemy models 1 spaces towards their starting edge. If unable to move they take 2 damage."
+
+					name_minion="Denizen of the Sea"
+					name_minion-for-script="denizen"
+					move_minion="3"
+					skill_minion="3"
+					defence_minion="3"
+					health_minion="4"
+					action_minion="Water Jet"
+					range_minion="3"
+					damage_minion="D3"
+					special_minion="-"
 				%}
 			</div>
 			<div id="id_tenth_{{ include.player }}" class="js-tabcontent">
 				{% include fiche-mage.html
 					mage_name="Necromancer"
+					mage_name-for-script="necromancer"
 					mage_description="Existing in the shadows, Necromancers are obsessed with death. Most of society tends to avoid them, unless of course there's a shortage of cheap labour."
 
 					ability_name="Rise!"
@@ -175,11 +284,23 @@
 					spell_range="8"
 					spell_damage="-"
 					spell_special="Target rolls 1 less D6 during Spell Selection on their next turn."
+
+					name_minion="Undead"
+					name_minion-for-script="undead"
+					move_minion="3"
+					skill_minion="2"
+					defence_minion="4"
+					health_minion="4"
+					action_minion="Grave Strike"
+					range_minion="1"
+					damage_minion="D6"
+					special_minion="-"
 				%}
 			</div>
 			<div id="id_eleventh_{{ include.player }}" class="js-tabcontent">
 				{% include fiche-mage.html
 					mage_name="Noble Scholar"
+					mage_name-for-script="noble"
 					mage_description="The ruling class of the city of Mirage. They tend to see themselves as sages and keepers of secret wisdom, while most others see them as arrogant and boring"
 
 					ability_name="Mystic Knowledge"
@@ -189,6 +310,17 @@
 					spell_range="6"
 					spell_damage="-"
 					spell_special="Move Target up to 4 spaces. This Move can be done over terrain and other models."
+
+					name_minion="Living Spell"
+					name_minion-for-script="living"
+					move_minion="3"
+					skill_minion="4"
+					defence_minion="2"
+					health_minion="4"
+					action_minion="Harmonic Blast"
+					range_minion="1"
+					damage_minion="2"
+					special_minion="Deals an extra 1 damage for every friendly model within 2 spaces of the active model."
 				%}
 			</div>
 		</div>

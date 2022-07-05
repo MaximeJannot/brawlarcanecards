@@ -150,12 +150,19 @@ button,
     border-radius: 50%;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .row_health input[type="number"] {
 	text-align: center;
 	padding-left: 17px;
 }
 
+.tabcontent__content {
+	flex: 2;
+}
+.tabcontent__content-minion {
+	flex: 1;
+}
 .tabcontent__content-minion .row_table-minion > div:last-child {
 	flex: 1;
 }
