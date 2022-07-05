@@ -30,9 +30,16 @@ button,
 .row {
 	display: flex;
 }
+.column-1_1 {
+	margin: 25px;
+	width: 100%;
+}
 .column-1_2 {
 	margin: 25px;
 	width: 50%;
+}
+.column-1_1 h2 {
+	margin-bottom: 25px;
 }
 
 .tabs__item {
@@ -48,8 +55,15 @@ button,
 	background: #353535;
 }
 .tabs__content {
+	display: flex;
 	background: #353535;
-	padding: 10px;
+	padding: 25px;
+	gap: 25px;
+}
+@media (max-width: 425px) {
+	.tabs__content {
+		flex-direction: column;
+	}
 }
 [aria-hidden="true"].tabs__content {
 	display: none;
@@ -58,15 +72,20 @@ button,
 .tabcontent__element:not(:last-child) {
 	margin-bottom: 25px;
 }
-.tabcontent__element h3,
-.tabcontent__element h4 {
+.tabcontent__element > h3,
+.tabcontent__element > h4,
+.tabcontent__element > h5 {
 	padding: 10px 20px;
 }
-.tabcontent__element h3 {
+.tabcontent__element > h3 {
 	background: #000;
 }
-.tabcontent__element h4 {
+.tabcontent__element > h4,
+.tabcontent__element > h5 {
 	background: #0b0b0b;
+}
+.tabcontent__element > h5 {
+	font-weight: bold;
 }
 .tabcontent__element p {
 	margin-top: 10px;
@@ -135,4 +154,11 @@ button,
 .row_health input[type="number"] {
 	text-align: center;
 	padding-left: 17px;
+}
+
+.tabcontent__content-minion .row_table-minion > div:last-child {
+	flex: 1;
+}
+.tabcontent__content-minion .row_table-minion {
+	margin-top: 5px;
 }

@@ -1,28 +1,68 @@
 <div class="js-tabs">
 			<ul class="js-tablist" data-existing-hx="h3">
 				<li class="js-tablist__item">
-					<a href="#id_first_{{ include.player }}" class="js-tablist__link">Blood mage</a>
+					<a href="#id_first_{{ include.player }}" class="js-tablist__link">Artful Trickster</a>
 				</li>
 				<li class="js-tablist__item">
-					<a href="#id_second_{{ include.player }}" class="js-tablist__link">Green witch</a>
+					<a href="#id_second_{{ include.player }}" class="js-tablist__link">Astral Warlock</a>
 				</li>
 				<li class="js-tablist__item">
-					<a href="#id_third_{{ include.player }}" class="js-tablist__link">Luminous Sorcerer</a>
+					<a href="#id_third_{{ include.player }}" class="js-tablist__link">Blood Mage</a>
 				</li>
 				<li class="js-tablist__item">
-					<a href="#id_fourth_{{ include.player }}" class="js-tablist__link">Necromancer</a>
+					<a href="#id_fourth_{{ include.player }}" class="js-tablist__link">Draconic Magus</a>
 				</li>
 				<li class="js-tablist__item">
-					<a href="#id_fifth_{{ include.player }}" class="js-tablist__link">Noble Scholar</a>
+					<a href="#id_fifth_{{ include.player }}" class="js-tablist__link">Flesh Transmuteur</a>
 				</li>
 				<li class="js-tablist__item">
-					<a href="#id_sixth_{{ include.player }}" class="js-tablist__link">Metallurgist</a>
+					<a href="#id_sixth_{{ include.player }}" class="js-tablist__link">Green Witch</a>
 				</li>
 				<li class="js-tablist__item">
-					<a href="#id_seventh_{{ include.player }}" class="js-tablist__link">Mermance</a>
+					<a href="#id_seventh_{{ include.player }}" class="js-tablist__link">Luminous Sorcerer</a>
+				</li>
+				<li class="js-tablist__item">
+					<a href="#id_eighth_{{ include.player }}" class="js-tablist__link">Metallurgist</a>
+				</li>
+				<li class="js-tablist__item">
+					<a href="#id_ninth_{{ include.player }}" class="js-tablist__link">Mermancer</a>
+				</li>
+				<li class="js-tablist__item">
+					<a href="#id_tenth_{{ include.player }}" class="js-tablist__link">Necromancer</a>
+				</li>
+				<li class="js-tablist__item">
+					<a href="#id_eleventh_{{ include.player }}" class="js-tablist__link">Noble Scholar</a>
 				</li>
 			</ul>
 			<div id="id_first_{{ include.player }}" class="js-tabcontent">
+				{% include fiche-mage.html
+					mage_name="Artful Trickster"
+					mage_description="These performers travel the land entertaining and astounding the masses. Specialising in hypnosis and illusions, some question whether their magic is actually real, or just smoke and mirrors"
+
+					ability_name="Adoring Fans"
+					ability_description="During their Start Phase, this Wizard gains 1 Crowd Favour."
+
+					spell_name="Vanishing Act"
+					spell_range="8"
+					spell_damage="-"
+					spell_special="Can only target friendly Minions. The Wizard and Target swap spaces"
+				%}
+			</div>
+			<div id="id_second_{{ include.player }}" class="js-tabcontent">
+				{% include fiche-mage.html
+					mage_name="Astral Warlock"
+					mage_description="Astral Warlocks reach out to ancient beings from beyond the stars. Many of them draw power into this world, not knowing the full malevolence of what lies behind it"
+
+					ability_name="Eyes from Beyond"
+					ability_description="This Wizard's Minions can ignore terrain for Line of Sight and when measuring the Range of their Action if the Target is visible to this Wizard."
+
+					spell_name="Mental Torment"
+					spell_range="6"
+					spell_damage="D6"
+					spell_special="Target has -2 Skill on their next turn."
+				%}
+			</div>
+			<div id="id_third_{{ include.player }}" class="js-tabcontent">
 				{% include fiche-mage.html
 					mage_name="Blood mage"
 					mage_description="The grisly rituals of Blood Mages are seen as disturbing by most people outside of The Pale Mountains. They have accepted their outsider status, and tend to care little for the opinions and laws of the rest of the land."
@@ -36,7 +76,38 @@
 					spell_special="-"
 				%}
 			</div>
-			<div id="id_second_{{ include.player }}" class="js-tabcontent">
+			<div id="id_fourth_{{ include.player }}" class="js-tabcontent">
+				{% include fiche-mage.html
+					mage_name="Draconic Magus"
+					mage_description="Heretical monks who worship the Slumbering Dragons. Their closeness to these powerful creatures allows them to harness the power of fire"
+
+					ability_name="Soul of the Dragon"
+					ability_description="Any model hit by a Spell/Action with the 'Flame' special rule is set on fire. At the start of a Player's Start phase, any of their models that are on fire take 1 Damage. Models can use their Action to put themselves out."
+
+					spell_name="Fire Breathe"
+					spell_range="6"
+					spell_damage="2D6"
+					spell_special="Flame"
+				%}
+			</div>
+			<div id="id_fifth_{{ include.player }}" class="js-tabcontent">
+				{% include fiche-mage.html
+					mage_name="Flesh Transmuteur"
+					mage_description="These Wizards operate on the fringes of modern magic. They have the power to shape organic matter, an ability that drives many mad with power."
+
+					ability_name="Biomancy"
+					ability_description="Roll a D3 when a new Mutant is placed on the Arena and apply the following results to that Minion. This bonus lasts until it dies. 
+					1) +1 Move. 
+					2) +1 Skill. 
+					3) +1 Defence."
+
+					spell_name="Extreme Transmutation"
+					spell_range="6"
+					spell_damage="-"
+					spell_special="Can only target friendly Minions. The Minion gains +2 to Move, Skill and Damage then dies at the end of its turn."
+				%}
+			</div>
+			<div id="id_sixth_{{ include.player }}" class="js-tabcontent">
 				{% include fiche-mage.html
 					mage_name="Green Witch"
 					mage_description="Generally found deep in the forests and swamps across the land. They have a strong connection with nature and will violently protect it from others."
@@ -50,19 +121,74 @@
 					spell_special="Target cannot Move or take an Action on their next turn."
 				%}
 			</div>
-			<div id="id_third_{{ include.player }}" class="js-tabcontent">
-				Ici le contenu du troisième onglet
-			</div>
-			<div id="id_fourth_{{ include.player }}" class="js-tabcontent">
-				Ici le contenu du quatrième onglet
-			</div>
-			<div id="id_fifth_{{ include.player }}" class="js-tabcontent">
-				Ici le contenu du cinquième onglet
-			</div>
-			<div id="id_sixth_{{ include.player }}" class="js-tabcontent">
-				Ici le contenu du sixième onglet
-			</div>
 			<div id="id_seventh_{{ include.player }}" class="js-tabcontent">
-				Ici le contenu du septième onglet
+				{% include fiche-mage.html
+					mage_name="Luminous Sorcerer"
+					mage_description="Devout followers of The Path of Light. They can be found throughout the land as priests of The Great Orb."
+
+					ability_name="Blinding Radiance"
+					ability_description="Any enemy models within 1 space have a -1 penalty to their Skill if they target this Wizard."
+
+					spell_name="Healing Light"
+					spell_range="6"
+					spell_damage="-"
+					spell_special="Target regains D6 Health."
+				%}
+			</div>
+			<div id="id_eighth_{{ include.player }}" class="js-tabcontent">
+				{% include fiche-mage.html
+					mage_name="Metallurgist"
+					mage_description="Found in most cities as Alchemical Tinkerers and Arcane Blacksmiths. They make a living by forging raw magical energy into mundane objects and are highly sought after."
+
+					ability_name=": Tough as Nails"
+					ability_description="When rolling Defence, roll 2 dice and choose the highest."
+
+					spell_name="Storm of Iron"
+					spell_range="4"
+					spell_damage="2D3"
+					spell_special="If successful, all enemy models within 2 spaces of the Target take 2 Damage."
+				%}
+			</div>
+			<div id="id_ninth_{{ include.player }}" class="js-tabcontent">
+				{% include fiche-mage.html
+					mage_name="Mermancer"
+					mage_description="Whether sailors, pirates or sea-folk, these Wizards draw their power from the Blue Deep. Their talents are invaluable to any who travel the seas."
+
+					ability_name="Oceanic Fog"
+					ability_description="Any friendly Minions within 3 spaces can add 1 to the Damage of their “Water Jet”."
+
+					spell_name="Tidal Wave"
+					spell_range="-"
+					spell_damage="-"
+					spell_special="Cannot target Minions. Move all enemy models 1 spaces towards their starting edge. If unable to move they take 2 damage."
+				%}
+			</div>
+			<div id="id_tenth_{{ include.player }}" class="js-tabcontent">
+				{% include fiche-mage.html
+					mage_name="Necromancer"
+					mage_description="Existing in the shadows, Necromancers are obsessed with death. Most of society tends to avoid them, unless of course there's a shortage of cheap labour."
+
+					ability_name="Rise!"
+					ability_description="If this Wizard has no Minions on the arena during their start phase, they automatically summon 1 Minion within 2 spaces of them."
+
+					spell_name="Curse"
+					spell_range="8"
+					spell_damage="-"
+					spell_special="Target rolls 1 less D6 during Spell Selection on their next turn."
+				%}
+			</div>
+			<div id="id_eleventh_{{ include.player }}" class="js-tabcontent">
+				{% include fiche-mage.html
+					mage_name="Noble Scholar"
+					mage_description="The ruling class of the city of Mirage. They tend to see themselves as sages and keepers of secret wisdom, while most others see them as arrogant and boring"
+
+					ability_name="Mystic Knowledge"
+					ability_description="Once per game turn, add +2 to a single Spell Selection, Skill, or Defence roll. This can be done after rolling."
+
+					spell_name="Teleport"
+					spell_range="6"
+					spell_damage="-"
+					spell_special="Move Target up to 4 spaces. This Move can be done over terrain and other models."
+				%}
 			</div>
 		</div>
