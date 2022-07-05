@@ -142,6 +142,12 @@ button,
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	font-size: 3rem;
+}
+.row_health > div {
+    display: flex;
+    background: white;
+    border-radius: 50rem;
 }
 .row_health button {
     display: flex;
@@ -151,10 +157,19 @@ button,
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    color: #000;
+    border: 1px solid #6c6c6c;
+    background-color: #fff;
+}
+.row_health input[value="15"] + button,
+.row_table-minion input[value="4"] + button {
+	opacity: 0.5;
+	cursor: not-allowed;;
 }
 .row_health input[type="number"] {
 	text-align: center;
 	padding-left: 17px;
+	border:  0;
 }
 
 .tabcontent__content {

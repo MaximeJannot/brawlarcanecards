@@ -23,9 +23,11 @@
 			<div class="column_table">
 				<h5>health</h5>
 				<div class="row_health">
-	        		<button id="loose_health_mage-{{ include.mage_name-for-script }}">-</button>
-	        		<input id="total_health_mage-{{ include.mage_name-for-script }}" type="number" value="15" min="0" max="15"/>
-	        		<button id="gain_health_mage-{{ include.mage_name-for-script }}" class="inactive">+</button>        
+					<div>
+	        			<button id="loose_health_mage-{{ include.mage_name-for-script }}">-</button>
+	        			<input id="total_health_mage-{{ include.mage_name-for-script }}" type="number" value="15" min="0" max="15"/>
+	        			<button id="gain_health_mage-{{ include.mage_name-for-script }}">+</button>				
+					</div>
 	        	</div>
 			</div>
 		</div>
@@ -80,25 +82,31 @@
 			<div class="column_table">
 				<h5>Minion 1</h5>
 				<div class="row_health">
-	        		<button id="loose_health_minion-{{ include.name_minion-for-script }}-1">-</button>
-	        		<input id="total_health_minion-{{ include.name_minion-for-script }}-1" type="number" value="{{ include.health_minion }}" min="0" max="{{ include.health_minion }}"/>
-	        		<button id="gain_health_minion-{{ include.name_minion-for-script }}-1" class="inactive">+</button>        
+					<div>
+	        			<button id="loose_health_minion-{{ include.name_minion-for-script }}-1">-</button>
+	        			<input id="total_health_minion-{{ include.name_minion-for-script }}-1" type="number" value="{{ include.health_minion }}" min="0" max="{{ include.health_minion }}"/>
+	        			<button id="gain_health_minion-{{ include.name_minion-for-script }}-1">+</button> 				
+					</div>
 	        	</div>
 			</div>
 			<div class="column_table">
 				<h5>Minion 2</h5>
 				<div class="row_health">
-	        		<button id="loose_health_minion-{{ include.name_minion-for-script }}-2">-</button>
-	        		<input id="total_health_minion-{{ include.name_minion-for-script }}-2" type="number" value="{{ include.health_minion }}" min="0" max="{{ include.health_minion }}"/>
-	        		<button id="gain_health_minion-{{ include.name_minion-for-script }}-2" class="inactive">+</button>        
+					<div>
+		        		<button id="loose_health_minion-{{ include.name_minion-for-script }}-2">-</button>
+		        		<input id="total_health_minion-{{ include.name_minion-for-script }}-2" type="number" value="{{ include.health_minion }}" min="0" max="{{ include.health_minion }}"/>
+		        		<button id="gain_health_minion-{{ include.name_minion-for-script }}-2">+</button>        
+					</div>
 	        	</div>
 			</div>
 			<div class="column_table">
 				<h5>Minion 3</h5>
 				<div class="row_health">
-	        		<button id="loose_health_minion-{{ include.name_minion-for-script }}-3">-</button>
-	        		<input id="total_health_minion-{{ include.name_minion-for-script }}-3" type="number" value="{{ include.health_minion }}" min="0" max="{{ include.health_minion }}"/>
-	        		<button id="gain_health_minion-{{ include.name_minion-for-script }}-3" class="inactive">+</button>        
+					<div>
+		        		<button id="loose_health_minion-{{ include.name_minion-for-script }}-3">-</button>
+		        		<input id="total_health_minion-{{ include.name_minion-for-script }}-3" type="number" value="{{ include.health_minion }}" min="0" max="{{ include.health_minion }}"/>
+		        		<button id="gain_health_minion-{{ include.name_minion-for-script }}-3">+</button>  			
+					</div>
 	        	</div>
 			</div>
 		</div>
