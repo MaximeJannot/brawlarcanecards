@@ -6,7 +6,8 @@ body {
 	text-align: center;
 }
 
-h2 {
+h2,
+.modal-title {
 	font-size: 2rem;
 	font-weight: bold;
 }
@@ -26,12 +27,31 @@ button,
 .js-tablist {
 	font-size: 1.2rem;
 }
+
 a {
 	color: #61f8ff;
 }
 a:hover,
 a:focus {
 	color: #bffcff;
+}
+
+table {
+	width: 100%;
+}
+table th,
+table td {
+	padding: 5px;
+	border:  1px solid #fff;
+	vertical-align: middle;
+}
+table th {
+	min-width: 50px;
+	background-color: #000;
+}
+
+.hidden {
+	display: none;
 }
 
 header img {
@@ -207,4 +227,50 @@ header img {
 }
 .tabcontent__content-minion .row_table-minion {
 	margin-top: 5px;
+}
+
+/* Pour les brontobrowsers */
+dialog {
+	display: block;
+	border: 0;
+}
+/* enlève le scroll de la page quand la modale est ouverte */
+.no-scroll {
+	overflow: hidden;
+}
+/* l’overlay couvre tout */
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 666;
+}
+/* modale */
+.modal {
+	position: fixed;
+	left: 25%;
+	right: auto;
+	top: 15%;
+	width: 50%;
+	color: #fff;
+	background: #191919;
+	border: 1px solid #fff;
+    max-height: calc(100% - 30%);
+    overflow: auto;
+	z-index: 667;
+}
+/* * */
+.btn-modal-help {
+	position: fixed;
+	top: 0;
+	right: 10px;
+}
+.btn-modal-help_spell {
+	right: 10rem;
+}
+.invisible {
+	opacity: 0;
 }
