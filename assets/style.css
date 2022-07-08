@@ -1,9 +1,16 @@
+/* Global */
 body {
 	color: #fff;
 	background: #191919;
 	line-height: 1.5;
 	font-family: Georgia, serif;
 	text-align: center;
+}
+button {
+	font-family: Georgia, serif;
+}
+button, a {
+	cursor: pointer;
 }
 
 h2,
@@ -24,6 +31,7 @@ h5,
 p,
 input,
 button,
+table,
 .js-tablist {
 	font-size: 1.2rem;
 }
@@ -41,23 +49,43 @@ table {
 }
 table th,
 table td {
-	padding: 5px;
+	padding: 10px 5px;
 	border:  1px solid #fff;
 	vertical-align: middle;
+}
+table tr th {
+	background-color: #000;
+}
+table tr:nth-child(odd) td {
+	background-color: #1f1e1e;
+}
+table tr:nth-child(even) td {
+	background-color: #333;
 }
 table th {
 	min-width: 50px;
 	background-color: #000;
 }
-
+footer {
+	margin-bottom: 20px;
+}
 .hidden {
 	display: none;
 }
+.invisible {
+	opacity: 0;
+	width: 0;
+	height: 0;
+	display: block;
+	text-indent: -9999px;
+}
 
+/* Header */
 header img {
 	max-width: 300px;
 }
 
+/* Columns */
 .row {
 	display: flex;
 }
@@ -73,6 +101,7 @@ header img {
 	margin-bottom: 25px;
 }
 
+/* Tablist */
 .tabs__list {
 	display: flex;
 	flex-wrap: wrap;
@@ -104,7 +133,7 @@ header img {
 	padding: 25px;
 	gap: 25px;
 }
-@media (max-width: 425px) {
+@media (max-width: 600px) {
 	.tabs__content {
 		flex-direction: column;
 	}
@@ -145,7 +174,20 @@ header img {
 	font-size: 1rem;
 	font-style: italic;
 }
+.tabcontent__content {
+	flex: 2;
+}
+.tabcontent__content-minion {
+	flex: 1;
+}
+.tabcontent__content-minion .row_table-minion > div:last-child {
+	flex: 1;
+}
+.tabcontent__content-minion .row_table-minion {
+	margin-top: 5px;
+}
 
+/* Table custom */
 .row_table {
 	display: flex;
 	flex-wrap: wrap;
@@ -205,10 +247,22 @@ header img {
     border: 1px solid #6c6c6c;
     background-color: #fff;
 }
+.row_health button:hover,
+.row_health button:focus {
+	color: #fff;
+	background-color: #000;
+}
 .row_health input[value="15"] + button,
 .row_table-minion input[value="4"] + button {
 	opacity: 0.5;
 	cursor: not-allowed;;
+}
+.row_health input[value="15"] + button:hover,
+.row_table-minion input[value="4"] + button:hover,
+.row_health input[value="15"] + button:focus,
+.row_table-minion input[value="4"] + button:focus {
+	color: #000;
+	background-color: #fff;
 }
 .row_health input[type="number"] {
 	text-align: center;
@@ -216,61 +270,78 @@ header img {
 	border:  0;
 }
 
-.tabcontent__content {
-	flex: 2;
-}
-.tabcontent__content-minion {
-	flex: 1;
-}
-.tabcontent__content-minion .row_table-minion > div:last-child {
-	flex: 1;
-}
-.tabcontent__content-minion .row_table-minion {
-	margin-top: 5px;
-}
-
-/* Pour les brontobrowsers */
+/* Modal */
 dialog {
 	display: block;
 	border: 0;
 }
-/* enlève le scroll de la page quand la modale est ouverte */
 .no-scroll {
 	overflow: hidden;
 }
-/* l’overlay couvre tout */
 .modal-overlay {
 	position: fixed;
 	top: 0;
 	bottom: 0;
 	right: 0;
 	left: 0;
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.8);
 	z-index: 666;
 }
-/* modale */
 .modal {
 	position: fixed;
 	left: 25%;
 	right: auto;
-	top: 15%;
+	top: 10%;
 	width: 50%;
 	color: #fff;
 	background: #191919;
 	border: 1px solid #fff;
-    max-height: calc(100% - 30%);
+    max-height: calc(100% - 20%);
     overflow: auto;
 	z-index: 667;
 }
-/* * */
-.btn-modal-help {
-	position: fixed;
+.btn-modals {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 	top: 0;
-	right: 10px;
+	right: 0;
+	margin: 25px 0 0;
+	border-radius: 0 0 0 10px;
+	background-color: #191919;
+	z-index: 99;
 }
-.btn-modal-help_spell {
-	right: 10rem;
+.btn-modal-help {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5px;
+	padding: 10px;
+	border-radius: 50rem;
+	transition: all 0.2s ease-out;
 }
-.invisible {
-	opacity: 0;
+.btn-modal-help:hover,
+.btn-modal-help:focus {
+	color: #fff;
+	background-color: #000;
+}
+.btn-modal-help > span {
+	margin-right: 10px;
+}
+.modal__wrapper {
+	position: relative;
+}
+.modal-title {
+	margin-bottom: 20px;
+}
+.modal-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+    display: flex;
+    padding: 0 !important;
+    margin: 0 0 0 auto;
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
 }
