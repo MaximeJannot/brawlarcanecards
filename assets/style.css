@@ -53,8 +53,20 @@ header img {
 	margin-bottom: 25px;
 }
 
+.tabs__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
 .tabs__item {
 	display: inline-block;
+	margin: 0 5px 5px;
+}
+.tabs__item:first-child {
+	margin-left: 0;
+}
+.tabs__item:last-child {
+	margin-right: 0;
 }
 .tabs__link {
 	display: inline-block;
