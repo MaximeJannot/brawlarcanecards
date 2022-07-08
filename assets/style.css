@@ -26,6 +26,17 @@ button,
 .js-tablist {
 	font-size: 1.2rem;
 }
+a {
+	color: #61f8ff;
+}
+a:hover,
+a:focus {
+	color: #bffcff;
+}
+
+header img {
+	max-width: 300px;
+}
 
 .row {
 	display: flex;
@@ -48,6 +59,7 @@ button,
 .tabs__link {
 	display: inline-block;
 	padding: 10px 20px;
+	color: #fff;
 	background: #000;
 	cursor: pointer;
 }
