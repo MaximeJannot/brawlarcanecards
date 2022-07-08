@@ -8,7 +8,7 @@ No use of cookies.
 
 
 ## Todo-list
- - [ ] Add popin for spell selection
- - [ ] Add popin for phase order
+ - [x] Add popin for spell selection
+ - [x] Add popin for phase order
  - [ ] Add/Remove a minion
 
