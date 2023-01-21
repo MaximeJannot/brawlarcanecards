@@ -12,4 +12,7 @@ No use of cookies.
  - [x] Add popin for phase order
  - [ ] Add/Remove a minion
  - [ ] Add popin for spell detail
+ - [ ] In the mage sheet, change "Discipline" to "Discipline Spell"
+ - [ ] Draconic Magus > Discipline Spell > Damage > 2D3
+ - [ ] Flesh Transmuteur > Ability > use <ol> <li>
 
