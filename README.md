@@ -1,5 +1,5 @@
 # Brawl Arcane Cards
-This project offers digital cards to play [Brawl Arcane 28](https://brettfp.itch.io/brawl-arcane-28).
+[This project](https://maximejannot.github.io/brawlarcanecards/#id_fourth_playerone) offers digital cards to play [Brawl Arcane 28](https://brettfp.itch.io/brawl-arcane-28).
 
 
 ## Technical presentation
@@ -11,4 +11,5 @@ No use of cookies.
  - [x] Add popin for spell selection
  - [x] Add popin for phase order
  - [ ] Add/Remove a minion
+ - [ ] Add popin for spell detail
 
