@@ -14,5 +14,5 @@ No use of cookies.
  - [ ] Add popin for spell detail
  - [ ] In the mage sheet, change "Discipline" to "Discipline Spell"
  - [ ] Draconic Magus > Discipline Spell > Damage > 2D3
- - [ ] Flesh Transmuteur > Ability > use <ol> <li>
+ - [ ] Flesh Transmuteur > Ability > use an ordered list
 
