@@ -126,6 +126,7 @@ header img {
 }
 .tabs__link[tabindex="0"] {
 	background: #353535;
+	text-decoration: underline;
 }
 .tabs__content {
 	display: flex;
@@ -202,12 +203,14 @@ header img {
 .row_table > div:last-child {
 	flex: 2;
 }
-.row_table h5 {
+.row_table h5,
+.row_table h6 {
 	width: 100%;
 	font-weight: bold;
 	background: #000;
 }
 .row_table h5,
+.row_table h6,
 .row_table p,
 .row_table .row_health {
 	padding: 10px 20px;
